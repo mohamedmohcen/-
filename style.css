@@ -1,0 +1,157 @@
+/* ????? ????? ????????? ???????? */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ????? ??????? ???????? */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* ??? ??????? ?? ???? ??????? */
+.app-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #56cfe1;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ????? ??????? ??????? */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ????? ?????? */
+.currency-inputs {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+input, select {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #56cfe1;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(86, 207, 225, 0.3);
+}
+
+input::placeholder, select::placeholder {
+    color: #aaa;
+}
+
+/* ????? ??????? */
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #56cfe1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4ba8c6;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* ????? ??????? */
+.result {
+    margin-top: 30px;
+    font-size: 22px;
+    color: #333;
+}
+
+.result h2 {
+    font-size: 24px;
+    color: #56cfe1;
+    margin-bottom: 12px;
+}
+
+.result p {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ????? ??? ????? */
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-top: 18px;
+}
+
+.date span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ????? ??????? ??????? (Responsive) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
